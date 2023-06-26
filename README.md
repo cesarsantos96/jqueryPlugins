@@ -1,6 +1,6 @@
 # jqueryPlugins
 
-    This is the repository for module 10 of the EBAC Full Stack course, where I'll be learning about jQuery and some other topics:
+This is the repository for module 10 of the EBAC Full Stack course, where I'll be learning about jQuery and some other topics:
 
 ## Plugins:
 
