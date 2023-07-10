@@ -18,14 +18,14 @@ $(document).ready(function() {
                 required: true,
                 email: true,
             },
-            telefone:{
+            telefone: {
                 required: true,
             },
-            mensagem:{
-                required:true,
+            mensagem: {
+                required: true,
             },
-            veiculoDeInteresse:{
-                required:false
+            veiculoDeInteresse: {
+                required: false
             }
         },
         messages: {
@@ -42,11 +42,14 @@ $(document).ready(function() {
         }
     });
 
-    $('.lista-veiculo button').click(function(){
+    $('.lista-veiculos button').click(function() {
         const destino = $('#contato');
-        $('html'),animate({
+        const nomeVeiculo =$(this).parent().find('h3').text(); 
+
+        $('#veiculo-interesse').val(nomeVeiculo);
+
+        $('html').animate({
             scrollTop: destino.offset().top
-        },1000)
-    )}
-)}      
-    
+        }, 1000);
+    });
+});
